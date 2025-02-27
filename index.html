@@ -89,6 +89,14 @@
     document.addEventListener('mousedown', function () {
         addCount();
         p.innerText = count;
+
+        p.id = 'op';
+        let audio = new Audio('pops/pop1.mp3')
+        audio.play();
+    })
+
+    document.addEventListener('mouseup', function () {
+        p.id = 'p';
     })
 </script>
 </body>
