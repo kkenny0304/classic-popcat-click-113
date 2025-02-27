@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <title>POPCAT CLASSIC</title>
     <style>
+
+        body {
+            margin: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
         .container {
             display: flex;
             flex-direction: column;
@@ -15,13 +24,26 @@
             background-color: #bdaa90;
         }
 
-        .tital {
+        .title {
+            max-width: 600px;
+        }
+
+        .title {
             width: 80%;
             margin-top: 2em;
         }
 
         .cat-img {
+            user-select: none;
+        }
+
+        .cat-img {
             width: 100%;
+            max-width: 800px;
+        }
+
+        .cat-img {
+            flex-grow: 1;
         }
 
         .cat-img {
@@ -33,6 +55,13 @@
 
         #p {
             background-image: url('imgs/p.png');
+            background-position: bottom;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #op {
+            background-image: url('imgs/op.png');
             background-position: bottom;
             background-size: contain;
             background-repeat: no-repeat;
