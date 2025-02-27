@@ -79,12 +79,16 @@
 
 <script>
     let count = 0;
+
+    let p = document.getElementById('p');
+    p.innerText = count;
     function addCount() {
         count += 1;
     }
 
     document.addEventListener('mousedown', function () {
         addCount();
+        p.innerText = count;
     })
 </script>
 </body>
